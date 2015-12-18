@@ -28,7 +28,7 @@ type project struct {
 }
 
 type contributor struct {
-	hours int
+	hours float64
 	price float64
 }
 
@@ -76,7 +76,7 @@ func (p *project) askInput() {
 			log.Fatal(err)
 		}
 
-		p.expenses += float64(c.hours) * c.price
+		p.expenses += c.hours * c.price
 	}
 
 	fmt.Print("Margem K: ")
