@@ -39,6 +39,7 @@ func main() {
 	project.profit = project.total - project.expenses
 
 	project.output()
+
 }
 
 func (p *project) askInput() {
